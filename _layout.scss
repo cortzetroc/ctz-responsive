@@ -1,0 +1,350 @@
+body {
+  font-size: 1.4rem;
+  background: $dark-gray;
+  line-height: 1.5;
+}
+
+#container {
+  background: none;
+  padding: 1rem;
+  position: static;
+}
+
+#inner {
+  background: none;
+  clear: both;
+}
+
+i[class^="ficons-"] {
+	background: $accent;
+  border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+}
+
+#content {
+  background: $dark-gray;
+  margin-top: -3.5rem;
+}
+
+#sidebar {
+  display: none !important;
+  @include break(medium) {
+    display: inline-block !important;
+  }
+}
+
+#index_constraint {
+  width: 100% !important;
+  @include break(medium) {
+    width: 75% !important;
+  }
+}
+
+/* header */
+#header {
+  height: auto;
+  border-bottom: 1px solid $accent;
+  margin: auto;
+  width: 90%;
+}
+
+.logo img {
+  display: none;
+}
+
+.logo {
+  position: static;
+  left: auto;
+  top: auto;
+  right: auto;
+  margin: .5rem 0;
+  text-align: left;
+  @include break(medium) {
+    text-align: center;
+  }
+}
+
+.logo:before {
+  content: "LeakForums";
+  color: $accent;
+  font-size: 4rem;
+  font-weight: bold;
+  @include break(medium) {
+    font-size: 8rem;
+  }
+}
+
+.head {
+  margin: auto;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
+.menu {
+  margin: 1rem 0 !important;
+}
+
+.menu ul {
+  float:left;
+}
+
+.menu ul li>a, .menu ul li a:visited {
+  display: initial;
+  height: auto;
+  padding: .8rem;
+}
+
+#panel, .alert-click {
+  font-size: 1.4rem;
+  float: left;
+  margin: 0.8rem 0;
+  @include break(medium) {
+    float: right;
+  }
+}
+
+#panel .dd {
+  width: auto;
+}
+
+/* table stuff */
+ul.subforum_listing li {
+  clear: both;
+  @include break(medium) {
+    clear: none;
+  }
+}
+
+tbody[id^="cat_"] tr td:nth-child(5), tbody tr td.forumdisplay_regular:nth-child(3), tbody tr td.forumdisplay_sticky:nth-child(3) {
+  display: none;
+  @include break(medium) {
+    display: table-cell;
+  }
+}
+
+tbody[id^="cat_"] tr:nth-child(1) {
+	display: none;
+  @include break(medium) {
+    display: table-row;
+  }
+}
+
+.tborder, .tbtn {
+  border: none;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+}
+
+.thead {
+  font-size: 2rem;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.thead span.smalltext {
+  display: none;
+  @include break(medium) {
+    display: block;
+  }
+}
+
+.thead .tbtn {
+  display: none;
+  @include break(medium) {
+    display: block;
+  }
+}
+
+.trow_sep {
+  font-size: 1.2rem;
+  background: $light-gray;
+}
+
+.trow1, .trow2 {
+  background: $med-gray;
+  border-bottom: 0;
+  border-top: 1px $light-gray solid;
+  padding: 1rem;
+}
+
+.thead {
+  padding: 0.8rem 0;
+}
+
+.tcat {
+  display: none;
+  @include break(medium) {
+    display: table-cell;
+  }
+}
+
+.tfoot {
+  background: $light-gray;
+}
+
+.expcolimage {
+  width: 1rem;
+}
+
+form[action="forumdisplay.php"] {
+  display: none;
+  @include break(medium) {
+    display: block;
+  }
+}
+
+/* breadcrumb */
+.navigation {
+  background: none;
+  border-top: 1px $accent solid;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-radius: 0;
+}
+
+.navigation li:not(.active):before {
+  display: none;
+}
+
+.navigation li:first-child {
+  padding-left: 0;
+}
+
+.navigation li, .navigation li.active {
+  background: none;
+  margin-right: 0.5rem;
+}
+
+.navigation li:not(.active):after {
+  content: " /";
+  border: none;
+  display: inline-block;
+  position: inherit;
+  top: inherit;
+  margin: 0 0.5rem;
+  left: inherit;
+}
+
+/* Menu tab bar */
+.shadetabs {
+  background: $accent;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  overflow: auto;
+}
+
+.shadetabs a {
+  text-align: center;
+  font-size: 1.2rem;
+  background: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 1.4rem 1.2rem;
+  color: $white;
+  white-space: nowrap;
+}
+
+.shadetabs a:hover {
+  background: $highlight-tint;
+}
+
+.shadetabs a.selected {
+  background: $highlight-tint;
+}
+
+/* pagenation */
+.pagination {
+  font-size: 1rem;
+  margin: 0;
+  padding: .8rem 0;
+}
+
+.pages, .pagination a {
+  background: $med-gray;
+  padding: 0.8rem;
+}
+
+.pagination .pagination_current, .pagination a {
+  border-radius: 0;
+  padding: 0.8rem;
+}
+
+/* thread display/buttons */
+.post_buttons a {
+  font-size: 1rem;
+  background: $light-gray;
+}
+
+a.large_button {
+  background: $light-gray;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0;
+  padding: 0.8rem;
+}
+
+.alert-bottom {
+  height: 2rem;
+  border: none;
+  border-radius: 0;
+  width: calc(100% - 3rem);
+}
+
+.alert-close {
+  border-radius: 0;
+  height: 2rem;
+  padding: 0 1rem;
+}
+
+/* user cp dropdown */
+#panel .dd {
+  right: auto;
+}
+
+#panel div.constraint a.anchor, #panel div.constraint a.anchor:visited {
+  margin: 0;
+}
+
+#panel ul li {
+  width: 10rem;
+}
+
+/* positioning */
+.float_right {
+  float: left;
+  @include break(medium) {
+    float: right;
+  }
+}
+
+/* foot */
+.thread_legend {
+  display: none;
+  @include break(medium) {
+    display: block;
+  }
+}
+
+form[action="search.php"] {
+  display: none;
+  @include break(medium) {
+    display: block;
+  }
+}
+
+.foot {
+  border-bottom: 1px solid $accent;
+  border-radius: 0;
+  padding: 0;
+  height: 0;
+}
+
+#footer {
+  border: none;
+}

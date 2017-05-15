@@ -1,0 +1,62 @@
+html {
+  font-size: 187.5%;
+  @include break(medium) {
+    font-size: 62.5%;
+  }
+}
+
+.smalltext {
+  font-size: 1.2rem;
+}
+
+div .smalltext {
+  font-size: 0.9rem;
+  @include break(medium) {
+    font-size: 1.2rem;
+  }
+}
+
+.red_alert a {
+  font-size: 1.2rem;
+}
+
+.red_alert {
+  margin: 1rem 0;
+  @include break(medium) {
+    margin: 0;
+  }
+}
+
+ul li, ul li ul li a:link, ul li ul li a:visited {
+  font-size: 1.2rem;
+}
+
+.menu ul li ul li a:link, .menu ul li ul li a:visited {
+  width: 8rem;
+  height: auto;
+}
+
+input.button {
+  font-size: 1.2rem;
+  padding: .8rem;
+  margin: .8rem .2rem;
+}
+
+button {
+  font-size: 1.2rem;
+}
+
+textarea {
+  font-size: 1.2rem;
+}
+
+table {
+  font-size: 1.2rem;
+}
+
+.alert-nav {
+  width: auto;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 0;
+}

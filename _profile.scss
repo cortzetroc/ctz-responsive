@@ -1,0 +1,35 @@
+// td.trow1[width="25%"], td.trow1[width="69%"] {
+//   display: block;
+//   width: 100%;
+//   @include break(medium) {
+//     display: table-cell;
+//   }
+// }
+//
+// table.tborder[cellpadding="10"] tr {
+//   display: block;
+//   @include break(medium) {
+//     display: table-row;
+//   }
+// }
+// 
+//
+// td[width="69%"] table[width="100%"] tr {
+//   display: block;
+//   @include break(medium) {
+//     display: table-row;
+//   }
+// }
+//
+// td[width="69%"] table[width="100%"] td {
+//   display: block;
+//   width: 100%;
+//   @include break(medium) {
+//     display: table-cell;
+//     width: auto;
+//   }
+// }
+//
+// .profile_username {
+//   font-size: inherit;
+// }

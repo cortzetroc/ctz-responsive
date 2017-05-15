@@ -1,0 +1,163 @@
+.post_body {
+  overflow: visible;
+}
+
+table[id^="post_"] tr {
+  display: block;
+  @include break(medium) {
+    display: table-row;
+  }
+}
+
+table[id^="post_"] td {
+  display: block;
+  width: auto;
+  @include break(medium) {
+    display: table-cell;
+  }
+}
+
+.post__author {
+  width: auto !important;
+  height: 9rem;
+  @include break(medium) {
+    width: 180px !important;
+    height: auto;
+  }
+}
+
+// //override above
+// td[data-type="post_bottom_right_block"] td.post_buttons {
+//   width: auto !important;
+//   height: auto;
+// }
+//
+// td[data-type="post_left_block"] {
+//   width: auto !important;
+//   height: 2rem;
+// }
+
+.cite, .hide {
+  display: none;
+  @include break(medium) {
+    display: block;
+  }
+}
+
+blockquote {
+  padding: 0.8rem;
+  clear: both;
+}
+
+.q-collapsed:after {
+  font-size: 1.2rem;
+  height: 3rem;
+  padding-top: 2rem;
+}
+
+/* post author */
+ul.post_user {
+  text-align: left;
+  @include break(medium) {
+    text-align: center;
+  }
+}
+
+span.username {
+  position: relative;
+  left: 8.5rem;
+  @include break(medium) {
+    position: static;
+  }
+}
+
+li[data-type="post_avatar"] img {
+  width: 8rem;
+  height: 8rem;
+  float: left;
+  margin-top: -1.3rem;
+  @include break(medium) {
+    float: none;
+    margin: 0;
+  }
+}
+
+.u-details {
+  float: right;
+  width: 45%;
+  font-size: 1rem;
+  @include break(medium) {
+    float: none;
+    width: auto;
+    font-size: 1.4rem;
+  }
+}
+
+.largetext {
+  font-size: 1.4rem;
+}
+
+img[alt="Online"], img[alt="Offline"] {
+  position: relative;
+  left: 8.6rem;
+  height: 1.2rem;
+  top: .2rem;
+  @include break(medium) {
+    position: static;
+  }
+}
+
+li[data-type="post_usertitle"] {
+  display: none;
+  @include break(medium) {
+    display: list-item;
+  }
+}
+
+li[data-type="post_stars"], li[data-type="post_x_year_tag"] {
+  display: none;
+  @include break(medium) {
+    display: list-item;
+  }
+}
+
+li.aw {
+  display: none;
+  @include break(medium) {
+    display: list-item;
+  }
+}
+
+li.post_userbar {
+  float: left;
+  margin-left: .4rem;
+  @include break(medium) {
+    float: none;
+  }
+}
+
+span[data-type="post_edited"] {
+  display: none;
+  white-space: normal !important;
+  float: left !important;
+  @include break(medium) {
+    display: block;
+    float: right !important;
+  }
+}
+
+.post_buttons a {
+  padding: .8rem;
+  font-size: 1rem;
+  float: left !important;
+  @include break(medium) {
+    float: initial !important;
+  }
+}
+
+tbody[id="quickreply_e"] tr:first-child td:first-child {
+  display: none;
+  @include break(medium) {
+    display: table-cell;
+  }
+}
